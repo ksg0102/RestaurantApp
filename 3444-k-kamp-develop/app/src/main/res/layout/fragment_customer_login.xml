@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_customer_login"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.CustomerLoginFragment">
+
+
+    <EditText
+        android:id="@+id/customer_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:ems="15"
+        android:hint="@string/phone_number"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/customer_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:ems="15"
+        android:inputType="textPassword"
+        android:hint= "@string/password"
+        />
+
+    <Button
+        android:id="@+id/customer_login_button"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:background="@android:color/black"
+        android:text="@string/login"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="127dp"
+        android:layout_height="142dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/wand" />
+
+
+</RelativeLayout>

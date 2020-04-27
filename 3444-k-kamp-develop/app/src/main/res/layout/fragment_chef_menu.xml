@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chef_menu"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.chefMenu.ChefMenuFragment">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="246dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="592dp"
+        android:text="Chef Main Menu"
+        android:textColor="@android:color/black"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="97dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
+        android:layout_marginBottom="424dp"
+        android:src="@drawable/order_history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_edit_menu"
+        android:layout_width="123dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginRight="236dp"
+        android:layout_marginBottom="132dp"
+        android:background="@android:color/black"
+        android:text="Edit Menu"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="424dp"
+        android:src="@drawable/inventory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="72dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="192dp"
+        android:src="@drawable/calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_inventory"
+        android:layout_width="123dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="364dp"
+        android:background="@android:color/black"
+        android:text="Inventory"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_view_schedule"
+        android:layout_width="123dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="132dp"
+        android:background="@android:color/black"
+        android:text="View Schedule"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_view_orders"
+        android:layout_width="123dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:layout_marginBottom="364dp"
+        android:background="@android:color/black"
+        android:text="View Orders"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="73dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        android:layout_marginBottom="196dp"
+        android:src="@drawable/adjust_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

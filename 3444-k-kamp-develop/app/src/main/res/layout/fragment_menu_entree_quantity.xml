@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menu_entree_quantity"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.menuEntreeFragments.MenuEntreeQuantityFragment">
+
+
+    <TextView
+        android:id="@+id/step_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/step_3_pick_your_quantity"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/wing_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="90dp"
+        android:ems="15"
+        android:hint="@string/number_of_wings"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/harp_logo" />
+
+    <ImageButton
+        android:id="@+id/button_help_image_quantity"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_refill_image_quantity"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/harp_logo"
+        android:layout_width="121dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/harp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_3" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="71dp"
+        android:background="@android:color/black"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wing_quantity" />
+
+    <TextView
+        android:id="@+id/min_wing_text"
+        android:layout_width="377dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/minimum_of_3_wings_please_refer_to_kid_s_menu_for_less"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_next" />
+
+    <TextView
+        android:id="@+id/text_wing_price"
+        android:layout_width="241dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="62dp"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/harp_logo"
+        app:layout_constraintTop_toBottomOf="@+id/step_3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

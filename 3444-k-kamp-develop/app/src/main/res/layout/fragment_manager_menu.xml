@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mananger_menu"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.managerMenu.ManagerMenuFragment">
+
+
+    <TextView
+        android:id="@+id/text_manager_main_menu"
+        android:layout_width="293dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="59dp"
+        android:text="@string/manager_main_menu"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_discount"
+        android:layout_width="70dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/coupon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_manager_main_menu" />
+
+    <Button
+        android:id="@+id/button_apply_discount"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/black"
+        android:text="@string/apply_discount"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_discount" />
+
+    <ImageView
+        android:id="@+id/image_table_status"
+        android:layout_width="67dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="45dp"
+        android:src="@drawable/table_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_manager_main_menu" />
+
+    <Button
+        android:id="@+id/button_table_status"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/black"
+        android:text="@string/table_status"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_table_status" />
+
+    <ImageView
+        android:id="@+id/image_order_history"
+        android:layout_width="82dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/order_history"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_apply_discount" />
+
+
+    <Button
+        android:id="@+id/button_order_history"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        android:text="@string/order_history"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_order_history" />
+
+    <ImageView
+        android:id="@+id/image_adjust_menu"
+        android:layout_width="65dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="51dp"
+        android:src="@drawable/adjust_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_table_status" />
+
+    <Button
+        android:id="@+id/button_adjust_menu"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/black"
+        android:text="@string/edit_menu"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_adjust_menu" />
+
+    <ImageView
+        android:id="@+id/image_view_employee"
+        android:layout_width="77dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/view_employees"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_order_history" />
+
+    <Button
+        android:id="@+id/button_view_employee"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/black"
+        android:text="@string/employees"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_employee" />
+
+
+    <ImageView
+        android:id="@+id/image_inventory"
+        android:layout_width="67dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
+        android:src="@drawable/inventory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_adjust_menu" />
+
+    <Button
+        android:id="@+id/button_inventory"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/black"
+        android:text="@string/inventory"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_inventory" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="66dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/survey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_view_employee" />
+
+    <Button
+        android:id="@+id/button_survey"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/black"
+        android:text="Surveys"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

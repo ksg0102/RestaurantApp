@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/manager_survey"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.managerMenu.ManagerSurveyFragment">
+
+    <TextView
+        android:id="@+id/text_survey_title"
+        android:layout_width="265dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/view_customer_surveys"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_survey"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_survey"
+        android:layout_width="87dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/survey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_get_surveys"
+        android:layout_width="347dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="23dp"
+        android:background="@android:color/black"
+        android:text="@string/get_all_survey_results"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_survey" />
+
+    <TextView
+        android:id="@+id/text_question_1"
+        android:layout_width="165dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/service_rating"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/question_1_response"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_get_surveys" />
+
+    <TextView
+        android:id="@+id/question_1_response"
+        android:layout_width="126dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="102dp"
+        android:text="@string/n_a"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_question_1"
+        app:layout_constraintTop_toBottomOf="@+id/button_get_surveys" />
+
+    <TextView
+        android:id="@+id/text_question_2"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="45dp"
+        android:text="@string/food_rating"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_question_3"
+        app:layout_constraintEnd_toStartOf="@+id/question_2_response"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_question_1" />
+
+    <TextView
+        android:id="@+id/question_2_response"
+        android:layout_width="145dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="114dp"
+        android:text="@string/n_a"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_question_2"
+        app:layout_constraintTop_toBottomOf="@+id/question_1_response" />
+
+    <TextView
+        android:id="@+id/text_question_3"
+        android:layout_width="203dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/application_rating"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/question_3_response"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_2_response" />
+
+    <TextView
+        android:id="@+id/question_3_response"
+        android:layout_width="131dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/n_a"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_question_3"
+        app:layout_constraintTop_toBottomOf="@+id/question_2_response" />
+
+    <Button
+        android:id="@+id/button_previous_survey"
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/black"
+        android:text="@string/previous"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_go_back_survey"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_next_survey"
+        android:layout_width="141dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/black"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_go_back_survey"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_go_back_survey"
+        android:layout_width="347dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/black"
+        android:text="@string/go_back"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

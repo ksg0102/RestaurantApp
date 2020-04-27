@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menu_kids_note"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.menuKids.MenuKidsNoteFragment">
+
+    <TextView
+        android:id="@+id/step_6"
+        android:layout_width="377dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/optional_add_a_note_to_our_chef"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_wand"
+        android:layout_width="145dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="149dp"
+        android:src="@drawable/wand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_6" />
+
+    <EditText
+        android:id="@+id/text_note_kids"
+        android:layout_width="366dp"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="29dp"
+        android:ems="15"
+        android:hint="@string/additional_note"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_wand" />
+
+
+    <Button
+        android:id="@+id/button_add_note_kids"
+        android:layout_width="308dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="62dp"
+        android:background="@android:color/black"
+        android:text="@string/add_note_to_order"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_note_kids" />
+
+    <Button
+        android:id="@+id/button_no_note_kids"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@android:color/black"
+        android:text="@string/no_thanks_i_m_good"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add_note_kids" />
+
+    <ImageButton
+        android:id="@+id/button_help_image_note_kids"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_refill_image_note_kids"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

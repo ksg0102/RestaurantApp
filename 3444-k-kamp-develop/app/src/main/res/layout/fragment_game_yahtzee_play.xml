@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yahtzeePlayLayout"
+    android:background="@drawable/gradient_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.gameFragments.GameYahtzeePlayFragment">
+
+    <TextView
+        android:id="@+id/yahChance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Chance"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahLStraight" />
+
+    <ImageView
+        android:id="@+id/yahVertDiv1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:paddingLeft="10px"
+        android:paddingRight="5px"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/yahHorizDiv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/yahVertDiv2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#000000"
+        android:paddingLeft="3px"
+        android:paddingRight="5px"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/yahVertDiv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/yahVertDiv3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:background="#000000"
+        android:paddingLeft="3px"
+        android:paddingRight="5px"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/yahVertDiv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/yahHorizDiv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:paddingTop="10px"
+        android:paddingBottom="5px"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahTotal" />
+
+    <TextView
+        android:id="@+id/yahTurnMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="PLAYER ONE'S TURN"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yahAct1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahActiveHeader" />
+
+    <TextView
+        android:id="@+id/yahAct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/yahAct1"
+        app:layout_constraintTop_toBottomOf="@+id/yahActiveHeader" />
+
+    <TextView
+        android:id="@+id/yahAct3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/yahAct2"
+        app:layout_constraintTop_toBottomOf="@+id/yahActiveHeader" />
+
+    <TextView
+        android:id="@+id/yahAct4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/yahAct3"
+        app:layout_constraintTop_toBottomOf="@+id/yahActiveHeader" />
+
+    <TextView
+        android:id="@+id/yahAct5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/yahAct4"
+        app:layout_constraintTop_toBottomOf="@+id/yahActiveHeader" />
+
+    <TextView
+        android:id="@+id/yahKept1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/yahKept2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/yahKept1"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/yahKept3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/yahKept2"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/yahKept4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/yahKept3"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/yahKept5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/yahKept4"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/yahKeep1"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahAct1" />
+
+    <Button
+        android:id="@+id/yahKeep2"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/yahKeep1"
+        app:layout_constraintTop_toBottomOf="@+id/yahAct2" />
+
+    <Button
+        android:id="@+id/yahKeep3"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/yahKeep2"
+        app:layout_constraintTop_toBottomOf="@+id/yahAct3" />
+
+    <Button
+        android:id="@+id/yahKeep4"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/yahKeep3"
+        app:layout_constraintTop_toBottomOf="@+id/yahAct4" />
+
+    <Button
+        android:id="@+id/yahKeep5"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/yahKeep4"
+        app:layout_constraintTop_toBottomOf="@+id/yahAct5" />
+
+    <TextView
+        android:id="@+id/yahActiveHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        android:text="YOUR ROLLS:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahTurnMark" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="KEPT ROLLS:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahKeep1" />
+
+    <TextView
+        android:id="@+id/yahOnes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Ones"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahP1Head" />
+
+    <TextView
+        android:id="@+id/yahTwos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Twos"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahOnes" />
+
+    <TextView
+        android:id="@+id/yahThrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Threes"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahTwos" />
+
+    <TextView
+        android:id="@+id/yahFours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Fours"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahThrees" />
+
+    <TextView
+        android:id="@+id/yahFives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Fives"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahFours" />
+
+    <TextView
+        android:id="@+id/yahSixes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Sixes"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahFives" />
+
+    <TextView
+        android:id="@+id/yahSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Sum"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahSixes" />
+
+    <TextView
+        android:id="@+id/yahBonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Bonus"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahSum" />
+
+    <TextView
+        android:id="@+id/yahThreeKind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Three Of A Kind"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahBonus" />
+
+    <TextView
+        android:id="@+id/yahFourKind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Four Of A Kind"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahThreeKind" />
+
+    <TextView
+        android:id="@+id/yahFullHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Full House"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahFourKind" />
+
+    <TextView
+        android:id="@+id/yahSStraight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Small Straight"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahFullHouse" />
+
+    <TextView
+        android:id="@+id/yahLStraight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Large Straight"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahSStraight" />
+
+    <TextView
+        android:id="@+id/yahYahtzee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="YAHTZEE"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahChance" />
+
+    <TextView
+        android:id="@+id/yahTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="TOTAL SCORE"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahYahtzee" />
+
+    <TextView
+        android:id="@+id/yahP1Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="P1"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yahP2Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="P2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yahOnes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahP1Head" />
+
+    <TextView
+        android:id="@+id/yahOnes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahP2Head" />
+
+    <TextView
+        android:id="@+id/yahTwos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahOnes1" />
+
+    <TextView
+        android:id="@+id/yahTwos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahOnes2" />
+
+    <TextView
+        android:id="@+id/yahThrees1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahTwos1" />
+
+    <TextView
+        android:id="@+id/yahThrees2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahTwos2" />
+
+    <TextView
+        android:id="@+id/yahFours1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahThrees1" />
+
+    <TextView
+        android:id="@+id/yahFours2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahThrees2" />
+
+    <TextView
+        android:id="@+id/yahFives1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahFours1" />
+
+    <TextView
+        android:id="@+id/yahFives2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahFours2" />
+
+    <TextView
+        android:id="@+id/yahSixes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahFives1" />
+
+    <TextView
+        android:id="@+id/yahSixes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahFives2" />
+
+    <TextView
+        android:id="@+id/yahSum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahSixes1" />
+
+    <TextView
+        android:id="@+id/yahSum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahSixes2" />
+
+    <TextView
+        android:id="@+id/yahBonus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahSum1" />
+
+    <TextView
+        android:id="@+id/yahBonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahSum2" />
+
+    <TextView
+        android:id="@+id/yahThreeKind1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahBonus1" />
+
+    <TextView
+        android:id="@+id/yahThreeKind2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahBonus2" />
+
+    <TextView
+        android:id="@+id/yahFourKind1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahThreeKind1" />
+
+    <TextView
+        android:id="@+id/yahFourKind2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahThreeKind2" />
+
+    <TextView
+        android:id="@+id/yahFullHouse1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahFourKind1" />
+
+    <TextView
+        android:id="@+id/yahFullHouse2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahFourKind2" />
+
+    <TextView
+        android:id="@+id/yahSStraight1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahFullHouse1" />
+
+    <TextView
+        android:id="@+id/yahSStraight2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahFullHouse2" />
+
+    <TextView
+        android:id="@+id/yahLStraight1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahSStraight1" />
+
+    <TextView
+        android:id="@+id/yahLStraight2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahSStraight2" />
+
+    <TextView
+        android:id="@+id/yahChance1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahLStraight1" />
+
+    <TextView
+        android:id="@+id/yahChance2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahLStraight2" />
+
+    <TextView
+        android:id="@+id/yahYahtzee1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahChance1" />
+
+    <TextView
+        android:id="@+id/yahYahtzee2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahChance2" />
+
+    <TextView
+        android:id="@+id/yahTotal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv3"
+        app:layout_constraintTop_toBottomOf="@+id/yahYahtzee1" />
+
+    <TextView
+        android:id="@+id/yahTotal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yahVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/yahYahtzee2" />
+
+    <TextView
+        android:id="@+id/yahRerollHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="REROLLS REMAINING:"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahKept1" />
+
+    <TextView
+        android:id="@+id/yahRerollText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahRerollHead" />
+
+    <Button
+        android:id="@+id/yahRerollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reroll"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/yahTallyScore"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahRerollText" />
+
+    <Button
+        android:id="@+id/yahTallyScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count Score"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/yahHorizDiv1"
+        app:layout_constraintEnd_toStartOf="@+id/yahVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahRerollButton" />
+
+    <TextView
+        android:id="@+id/yahVictory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahHorizDiv1" />
+
+    <Button
+        android:id="@+id/yahReplayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Play Again"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahHorizDiv1" />
+
+    <Button
+        android:id="@+id/yahQuitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Go Back"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yahHorizDiv1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

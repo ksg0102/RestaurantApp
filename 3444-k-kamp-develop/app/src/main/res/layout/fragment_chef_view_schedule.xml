@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chef_view_schedule"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.chefMenu.ChefViewScheduleFragment">
+
+    <TextView
+        android:id="@+id/chefInventoryText"
+        android:layout_width="229dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/view_schedule"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_view_schedule"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_chef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:ems="15"
+        android:hint="ID"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_schedule"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_get_info_chef"
+        android:layout_width="296dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:background="@android:color/black"
+        android:text="@string/get_information"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_chef" />
+
+    <TextView
+        android:id="@+id/hourly_wage_chef"
+        android:layout_width="157dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/hourly_wage"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_get_info_chef" />
+
+    <TextView
+        android:id="@+id/hours_worked_chef"
+        android:layout_width="178dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="33dp"
+        android:text="@string/hours_worked"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourly_wage_chef" />
+
+    <!-- <TextView
+         android:id="@+id/next_shift_chef"
+         android:layout_width="364dp"
+         android:layout_height="59dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginEnd="37dp"
+         android:text="@string/next_shift"
+         android:textSize="18sp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/hours_worked_chef" />
+ -->
+    <EditText
+        android:id="@+id/clock_in_hours_chef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="12dp"
+        android:ems="15"
+        android:hint="Hours Worked This Shift"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button_update_hours_chef"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_update_hours_chef"
+        android:layout_width="296dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/black"
+        android:text="@string/update_hours"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/chefWage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hourly_wage"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <TextView
+        android:id="@+id/chefHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hours_worked"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

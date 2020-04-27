@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/me_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.menuEntreeFragments.MenuEntreeMeatFragment">
+
+
+    <TextView
+        android:id="@+id/step_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/step_1_pick_your_meat"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/boneless_icon"
+        android:layout_width="124dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/bonesless_wing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_1" />
+
+    <ImageView
+        android:id="@+id/bone_wing"
+        android:layout_width="140dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:src="@drawable/bone_wing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boneless_icon"
+        app:layout_constraintTop_toBottomOf="@+id/step_1" />
+
+    <ImageView
+        android:id="@+id/tenders"
+        android:layout_width="239dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="51dp"
+        android:src="@drawable/chicken_tender"
+        app:layout_constraintEnd_toStartOf="@+id/contains_wheat_bone"
+        app:layout_constraintTop_toBottomOf="@+id/calories_boneless" />
+
+    <Button
+        android:id="@+id/button_boneless"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/black"
+        android:text="@string/boneless"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boneless_icon" />
+
+    <Button
+        android:id="@+id/button_bone"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@android:color/black"
+        android:text="@string/bone"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bone_wing" />
+
+    <TextView
+        android:id="@+id/calories_boneless"
+        android:layout_width="116dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/_43_calories_ea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_boneless" />
+
+    <TextView
+        android:id="@+id/calories_bone"
+        android:layout_width="110dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:text="@string/_56_calories_ea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calories_boneless"
+        app:layout_constraintTop_toBottomOf="@+id/button_bone" />
+
+    <TextView
+        android:id="@+id/contains_wheat_boneless"
+        android:layout_width="113dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/contains_wheat"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_boneless" />
+
+    <TextView
+        android:id="@+id/contains_wheat_tenders"
+        android:layout_width="113dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/contains_wheat"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_tenders" />
+
+    <Button
+        android:id="@+id/button_tenders"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/black"
+        android:text="@string/tenders"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenders" />
+
+    <TextView
+        android:id="@+id/contains_wheat_bone"
+        android:layout_width="113dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:text="@string/contains_wheat"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_bone" />
+
+    <TextView
+        android:id="@+id/calories_tenders"
+        android:layout_width="110dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_70_calories_ea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_tenders" />
+
+    <ImageButton
+        android:id="@+id/button_help_image_meat"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_refill_image_meat"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="175dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="16dp"
+        android:text="Ingrediants include farm fresh chicken, butter, and bread crumbs."
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contains_wheat_bone" />
+
+    <TextView
+        android:id="@+id/text_Boneless_Popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Our most popular option!"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button_boneless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boneless_icon"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/text_Bone_Popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Our most popular option!"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button_bone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bone_wing"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/text_Tender_Popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Our most popular option!"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tenders"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenders"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

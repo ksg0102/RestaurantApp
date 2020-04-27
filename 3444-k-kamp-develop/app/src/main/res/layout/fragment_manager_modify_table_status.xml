@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/manager_modify_status"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.managerMenu.ManagerModifyTableStatus">
+
+
+    <ImageView
+        android:id="@+id/image_modify"
+        android:layout_width="84dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/adjust_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_modify_title"
+        android:layout_width="274dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/modify_table_status"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_modify"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/modify_table_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="46dp"
+        android:ems="15"
+        android:hint="Table Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_modify"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/modify_table_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="46dp"
+        android:ems="15"
+        android:hint="Status"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify_table_number"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_modify_table_status_option"
+        android:layout_width="291dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="80dp"
+        android:background="@android:color/black"
+        android:text="@string/modify_table_status"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/modify_table_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="124dp"
+        android:ems="15"
+        android:hint="Order Total"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/button_modify_table_status_option"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menu_drink_tea"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.menuDrinksFragments.MenuDrinksTeaFragment">
+
+
+    <ImageView
+        android:id="@+id/image_tea"
+        android:layout_width="145dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:src="@drawable/sweet_tea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_tea_title"
+        android:layout_width="180dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/sweet_tea"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_tea" />
+
+    <TextView
+        android:id="@+id/text_tea_description"
+        android:layout_width="327dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:text="@string/savor_the_taste_of_southern_hospitality_with_the_this_tea_that_has_been_sweetend_to_perfection"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_tea_title" />
+
+    <ImageView
+        android:id="@+id/image_sweet_tea"
+        android:layout_width="228dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:src="@drawable/sweet_iced_tea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_tea_description" />
+
+
+    <TextView
+        android:id="@+id/text_tea_calories"
+        android:layout_width="249dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:text="@string/_91_calories_per_serving"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_sweet_tea" />
+
+    <ImageButton
+        android:id="@+id/button_help_image_drinks_tea"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_refill_image_drinks_tea"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/text_tea_ingredients"
+        android:layout_width="337dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:text="@string/ingredients_black_tea_leaves_syrup_etc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_tea_calories" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="154dp"
+        android:src="@drawable/vegetarian"
+        app:layout_constraintStart_toEndOf="@+id/text_tea_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

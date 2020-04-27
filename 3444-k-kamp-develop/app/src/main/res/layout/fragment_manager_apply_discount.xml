@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/managerDiscount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.managerMenu.ManagerApplyDiscountFragment">
+
+    <ImageView
+        android:id="@+id/image_apply_discount"
+        android:layout_width="83dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/coupon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_discount_title"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/apply_discount"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_apply_discount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/discount_table_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="46dp"
+        android:ems="15"
+        android:hint="Table Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_apply_discount"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/discount_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="46dp"
+        android:ems="15"
+        android:hint="Discount Percent"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discount_table_number"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text_new_total"
+        android:layout_width="347dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="57dp"
+        android:text="New Total: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_update_table_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/button_calculate_discount"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="68dp"
+        android:background="@android:color/black"
+        android:text="Calculate Discount"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discount_percent" />
+
+    <Button
+        android:id="@+id/button_update_table_total"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="49dp"
+        android:background="@android:color/black"
+        android:text="Update Table Total"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

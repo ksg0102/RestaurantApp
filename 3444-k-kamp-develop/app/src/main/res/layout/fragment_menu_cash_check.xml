@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_payment_cash_check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.menuPaymentFragments.MenuCashCheckFragment">
+
+
+    <Button
+        android:id="@+id/no_tip"
+        android:layout_width="70dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="68dp"
+        android:background="@android:color/black"
+        android:text="0%"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/cash_fifteen"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cash_order" />
+
+    <TextView
+        android:id="@+id/cash_total_price"
+        android:layout_width="171dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="48dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button_cash_checkout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/cash_order"
+        android:layout_width="77dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="148dp"
+        android:text="Order :"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cash_order_price"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_help_image_payment_cash_check"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_refill_image_payment_cash_check"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_cash_checkout"
+        android:layout_width="269dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="90dp"
+        android:background="@android:color/black"
+        android:text="CheckOut"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cash_total"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/cash_fifteen"
+        android:layout_width="70dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@android:color/black"
+        android:text="15%"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/cash_twenty"
+        app:layout_constraintTop_toBottomOf="@+id/cash_order" />
+
+    <Button
+        android:id="@+id/cash_twenty"
+        android:layout_width="66dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/black"
+        android:text="20%"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/cash_twenty_five"
+        app:layout_constraintTop_toBottomOf="@+id/cash_order" />
+
+    <Button
+        android:id="@+id/cash_twenty_five"
+        android:layout_width="65dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@android:color/black"
+        android:text="25%"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cash_order" />
+
+    <TextView
+        android:id="@+id/cash_total"
+        android:layout_width="75dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="160dp"
+        android:text="Total :"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cash_total_price"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cash_fifteen" />
+
+    <TextView
+        android:id="@+id/cash_order_price"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="84dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cash_order"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="119dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tip_value"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cash_order" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

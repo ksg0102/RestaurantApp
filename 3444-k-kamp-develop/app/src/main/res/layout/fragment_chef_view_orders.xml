@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chef_view_orders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.chefMenu.ChefViewOrdersFragment">
+
+
+    <Button
+        android:id="@+id/chefOrderPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Previous"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chefOrderUpdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderStatus" />
+
+    <TextView
+        android:id="@+id/chefOrderStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:text="Status:"
+        app:layout_constraintEnd_toStartOf="@+id/chefOrderStatus"
+        app:layout_constraintTop_toTopOf="@+id/chefOrderStatus" />
+
+    <TextView
+        android:id="@+id/chefOrderDrinksLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:text="Drinks:"
+        app:layout_constraintEnd_toEndOf="@+id/chefOrderTotalLabel"
+        app:layout_constraintTop_toTopOf="@+id/chefOrderDrinks"
+        tools:layout_editor_absoluteX="42dp" />
+
+    <TextView
+        android:id="@+id/chefOrderSidesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:text="Sides:"
+        app:layout_constraintEnd_toEndOf="@+id/chefOrderTotalLabel"
+        app:layout_constraintTop_toTopOf="@+id/chefOrderSides"
+        tools:layout_editor_absoluteX="47dp" />
+
+    <TextView
+        android:id="@+id/chefOrderEntreeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:text="Entree:"
+        app:layout_constraintEnd_toEndOf="@+id/chefOrderTotalLabel"
+        app:layout_constraintTop_toTopOf="@+id/chefOrderEntree"
+        tools:layout_editor_absoluteX="39dp" />
+
+    <TextView
+        android:id="@+id/chefOrderTableLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:text="Table:"
+        app:layout_constraintEnd_toEndOf="@+id/chefOrderTotalLabel"
+        app:layout_constraintTop_toTopOf="@+id/chefOrderTable"
+        tools:layout_editor_absoluteX="48dp" />
+
+    <TextView
+        android:id="@+id/chefOrderNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET ORDERS"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chefOrderTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderDrinks"
+        tools:layout_editor_absoluteX="169dp" />
+
+    <ImageView
+        android:id="@+id/image_table_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/table_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/chefOrderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Order History"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_table_status"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/chefOrderPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="GET ALL ORDERS FIRST"
+        app:layout_constraintEnd_toStartOf="@+id/chefOrderGetOrds"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_table_status"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderTitle" />
+
+    <TextView
+        android:id="@+id/chefOrderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET ORDERS"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chefOrderTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderPosition"
+        tools:layout_editor_absoluteX="173dp" />
+
+    <TextView
+        android:id="@+id/chefOrderTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET ORDERS"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chefOrderEntree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderID"
+        tools:layout_editor_absoluteX="171dp" />
+
+    <TextView
+        android:id="@+id/chefOrderEntree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET ORDERS"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chefOrderSides"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderTable"
+        tools:layout_editor_absoluteX="172dp" />
+
+    <TextView
+        android:id="@+id/chefOrderSides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET ORDERS"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chefOrderDrinks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderEntree"
+        tools:layout_editor_absoluteX="172dp" />
+
+    <TextView
+        android:id="@+id/chefOrderDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET ORDERS"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chefOrderNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderSides"
+        tools:layout_editor_absoluteX="170dp" />
+
+    <TextView
+        android:id="@+id/chefOrderTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET ORDERS"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chefOrderStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderNotes" />
+
+    <TextView
+        android:id="@+id/chefOrderIDLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:text="ID:"
+        app:layout_constraintEnd_toEndOf="@+id/chefOrderTotalLabel"
+        app:layout_constraintTop_toTopOf="@+id/chefOrderID"
+        tools:layout_editor_absoluteX="82dp" />
+
+    <TextView
+        android:id="@+id/chefOrderNotesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:text="Notes:"
+        app:layout_constraintEnd_toEndOf="@+id/chefOrderTotalLabel"
+        app:layout_constraintTop_toTopOf="@+id/chefOrderNotes" />
+
+    <TextView
+        android:id="@+id/chefOrderTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="2dp"
+        android:text="Total:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chefOrderTotal" />
+
+    <EditText
+        android:id="@+id/chefOrderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Status"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/chefOrderPrevious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderTotal" />
+
+    <Button
+        android:id="@+id/chefOrderUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="DONE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chefOrderNext"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chefOrderPrevious"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderStatus" />
+
+    <Button
+        android:id="@+id/chefOrderNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chefOrderUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderStatus" />
+
+    <Button
+        android:id="@+id/chefOrderGetOrds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="4dp"
+        android:background="#000000"
+        android:text="Get Orders"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefOrderTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

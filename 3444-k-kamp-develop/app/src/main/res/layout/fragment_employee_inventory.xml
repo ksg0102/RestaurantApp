@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/managerInventory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.managerMenu.ManagerInventoryFragment">
+
+    <TextView
+        android:id="@+id/managerInventoryText"
+        android:layout_width="145dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="133dp"
+        android:text="Inventory"
+        android:textColor="@android:color/black"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/managerInventoryUpdate"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="57dp"
+        android:background="@android:color/black"
+        android:text="Update Count"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/managerInventoryLeave"
+        app:layout_constraintEnd_toStartOf="@+id/managerInventoryNext" />
+
+    <Button
+        android:id="@+id/managerInventoryBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="58dp"
+        android:background="@android:color/black"
+        android:text="Previous"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/managerInventoryAdd"
+        app:layout_constraintEnd_toStartOf="@+id/managerInventoryUpdate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/managerInventoryNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="58dp"
+        android:background="@android:color/black"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/managerInventoryDelete"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/managerInventoryQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:hint="[QUANTITY]"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerInventoryName" />
+
+    <Button
+        android:id="@+id/managerInventoryLeave"
+        android:layout_width="114dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="116dp"
+        android:background="@android:color/black"
+        android:text="Go Back"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/managerInventoryDelete"
+        app:layout_constraintStart_toEndOf="@+id/managerInventoryAdd" />
+
+    <Button
+        android:id="@+id/managerInventoryFetch"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="136dp"
+        android:background="@android:color/black"
+        android:text="Get Ingredients"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerInventoryText" />
+
+    <EditText
+        android:id="@+id/managerInventoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:hint="[INGREDIENT]"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerInventoryPosition" />
+
+    <EditText
+        android:id="@+id/managerInventoryId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:hint="[ID]"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerInventoryPosition" />
+
+    <Button
+        android:id="@+id/managerInventoryAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="118dp"
+        android:background="@android:color/black"
+        android:text="Add New"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/managerInventoryDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="118dp"
+        android:background="@android:color/black"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/managerInventoryPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="127dp"
+        android:text="GET INGREDIENTS FIRST"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerInventoryFetch" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="29dp"
+        android:src="@drawable/inventory"
+        app:layout_constraintEnd_toStartOf="@+id/managerInventoryText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

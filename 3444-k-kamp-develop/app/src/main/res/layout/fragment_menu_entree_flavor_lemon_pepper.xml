@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menu_entree_flavor_lemon_pepper"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.menuEntreeFragments.menuEntreeFlavorFragments.MenuEntreeFlavorLemonPepper">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="148dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:src="@drawable/lemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="238dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:text="@string/lemon_pepper"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="378dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Made with hearty pepper and zesty lemon, this sauce has people craving it from coast to coast."
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="364dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="64dp"
+        android:text="35 Calories (per 1 tbsp)"
+        app:layout_constraintBottom_toTopOf="@+id/button_refill_image_flavors_lp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <ImageButton
+        android:id="@+id/button_help_image_flavors_lp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_refill_image_flavors_lp"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="253dp"
+        android:layout_height="251dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/lemon_pepper_chicken"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="359dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="54dp"
+        android:text="Ingredients include lemon juice and black pepper"
+        app:layout_constraintBottom_toTopOf="@+id/button_refill_image_flavors_lp"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

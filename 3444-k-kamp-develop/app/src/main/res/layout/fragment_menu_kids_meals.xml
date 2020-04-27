@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menu_kids_menu"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.menuKids.MenuKidsMealsFragment">
+
+    <ImageButton
+        android:id="@+id/button_help_image_kids"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_refill_image_kids"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_kids_icon"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="49dp"
+        android:src="@drawable/wizard"
+        app:layout_constraintEnd_toStartOf="@+id/text_kids_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_kids_title"
+        android:layout_width="216dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/kid_s_menu"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/image_button_kids_barbecue"
+        android:layout_width="108dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="135dp"
+        android:background="@null"
+        android:src="@drawable/barbecue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_tap_icon" />
+
+    <ImageButton
+        android:id="@+id/image_button_kids_lemon"
+        android:layout_width="99dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="157dp"
+        android:background="@null"
+        android:src="@drawable/lemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_barbecue_kids" />
+
+    <Button
+        android:id="@+id/button_barbecue_kids"
+        android:layout_width="236dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="88dp"
+        android:background="@android:color/black"
+        android:text="Barbecue Wing Combo"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_kids_barbecue" />
+
+    <Button
+        android:id="@+id/button_lemon_kids"
+        android:layout_width="236dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="88dp"
+        android:background="@android:color/black"
+        android:text="Lemon Pepper Wing Combo"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_kids_lemon" />
+
+    <TextView
+        android:id="@+id/text_tap_icon"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:text="Select Icon for description. \nEvery Kids Meal is $5.00"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_kids_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

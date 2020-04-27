@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "81422103745",
+    "firebase_url": "https://king-kevin.firebaseio.com",
+    "project_id": "king-kevin",
+    "storage_bucket": "king-kevin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81422103745:android:28bf86db0de5ede7925040",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81422103745-b0d1m5kjemrcohtedffuojsf02t272sd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGZeMgz3woIhkWsM4If5MFsSZI6Nf_Orw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81422103745-b0d1m5kjemrcohtedffuojsf02t272sd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

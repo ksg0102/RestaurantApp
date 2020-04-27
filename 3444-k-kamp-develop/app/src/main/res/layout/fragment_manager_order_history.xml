@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manager_view_orders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.managerMenu.ManagerOrderHistoryFragment">
+
+    <EditText
+        android:id="@+id/managerOrderHistSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Side"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/managerOrderHistDrink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerOrderHistEntree" />
+
+    <Button
+        android:id="@+id/manOrdHistNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="320dp"
+        android:background="#000000"
+        android:text="PREVIOUS"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerOrderHistStatus" />
+
+    <Button
+        android:id="@+id/manOrdHistPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="296dp"
+        android:background="#000000"
+        android:text="NEXT"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerOrderHistStatus" />
+
+    <TextView
+        android:id="@+id/manOrdHistTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order History"
+        android:textColor="@android:color/black"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <ImageView
+        android:id="@+id/manOrdHistImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/order_history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <EditText
+        android:id="@+id/managerOrderHistID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/managerOrderHistTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manOrdHistImg" />
+
+    <EditText
+        android:id="@+id/managerOrderHistTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Table Number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/managerOrderHistEntree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerOrderHistID" />
+
+    <EditText
+        android:id="@+id/managerOrderHistNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/managerOrderHistTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerOrderHistDrink" />
+
+    <EditText
+        android:id="@+id/managerOrderHistTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Total"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/managerOrderHistStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerOrderHistNote" />
+
+
+    <EditText
+        android:id="@+id/managerOrderHistEntree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Entree"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/managerOrderHistSide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerOrderHistTable" />
+
+    <EditText
+        android:id="@+id/managerOrderHistDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Drink"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/managerOrderHistNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerOrderHistSide" />
+
+    <TextView
+        android:id="@+id/manOrdHistIDLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="ID:"
+        app:layout_constraintEnd_toStartOf="@+id/managerOrderHistID"
+        app:layout_constraintTop_toTopOf="@+id/managerOrderHistID" />
+
+    <TextView
+        android:id="@+id/manOrdHistTabLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Table:"
+        app:layout_constraintEnd_toStartOf="@+id/managerOrderHistTable"
+        app:layout_constraintTop_toTopOf="@+id/managerOrderHistTable" />
+
+    <TextView
+        android:id="@+id/manOrdHistEntLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Entree:"
+        app:layout_constraintEnd_toStartOf="@+id/managerOrderHistEntree"
+        app:layout_constraintTop_toTopOf="@+id/managerOrderHistEntree" />
+
+    <TextView
+        android:id="@+id/manOrdHistSideLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Side:"
+        app:layout_constraintEnd_toStartOf="@+id/managerOrderHistSide"
+        app:layout_constraintTop_toTopOf="@+id/managerOrderHistSide" />
+
+    <EditText
+        android:id="@+id/managerOrderHistStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Status"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/manOrdHistNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/managerOrderHistTotal" />
+
+    <TextView
+        android:id="@+id/manOrdHistDrinkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Drink:"
+        app:layout_constraintEnd_toStartOf="@+id/managerOrderHistDrink"
+        app:layout_constraintTop_toTopOf="@+id/managerOrderHistDrink" />
+
+    <TextView
+        android:id="@+id/manOrdHistNoteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Notes:"
+        app:layout_constraintEnd_toStartOf="@+id/managerOrderHistNote"
+        app:layout_constraintTop_toTopOf="@+id/managerOrderHistNote" />
+
+    <TextView
+        android:id="@+id/manOrdHistTotLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Total:"
+        app:layout_constraintEnd_toStartOf="@+id/managerOrderHistTotal"
+        app:layout_constraintTop_toTopOf="@+id/managerOrderHistTotal" />
+
+    <TextView
+        android:id="@+id/manOrdHistStatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Status:"
+        app:layout_constraintEnd_toStartOf="@+id/managerOrderHistStatus"
+        app:layout_constraintTop_toTopOf="@+id/managerOrderHistStatus" />
+
+    <TextView
+        android:id="@+id/manOrdHistPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="GET ALL ORDERS FIRST"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manOrdHistTitle" />
+
+    <Button
+        android:id="@+id/manOrdHistGetAll"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="140dp"
+        android:background="#000000"
+        android:text="GET ALL ORDERS"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/manOrdHistPrev"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

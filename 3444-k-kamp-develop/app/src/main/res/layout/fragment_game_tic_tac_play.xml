@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ticTacPlayLayout"
+    android:background="@drawable/gradient_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.gameFragments.GameTicTacPlayFragment">
+
+    <Button
+        android:id="@+id/ticTacB12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ticTacVertDiv1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:paddingLeft="10px"
+        android:paddingRight="5px"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ticTacVertDiv2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:paddingLeft="10px"
+        android:paddingRight="5px"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ticTacVertDiv3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:paddingLeft="10px"
+        android:paddingRight="5px"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ticTacVertDiv4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:paddingLeft="10px"
+        android:paddingRight="5px"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ticTacHorizDiv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:paddingTop="10px"
+        android:paddingBottom="5px"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ticTacHorizDiv4" />
+
+    <ImageView
+        android:id="@+id/ticTacHorizDiv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:paddingTop="10px"
+        android:paddingBottom="5px"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1" />
+
+    <ImageView
+        android:id="@+id/ticTacHorizDiv3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:paddingTop="10px"
+        android:paddingBottom="5px"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv2" />
+
+    <TextView
+        android:id="@+id/ticTacX21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="#FF0000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv1"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ticTacX11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="#FF0000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv1"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ticTacX12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="#FF0000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1" />
+
+    <TextView
+        android:id="@+id/ticTacX13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="#FF0000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv2" />
+
+    <TextView
+        android:id="@+id/ticTacX22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="#FF0000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1" />
+
+    <TextView
+        android:id="@+id/ticTacX23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="#FF0000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toBottomOf="@id/ticTacHorizDiv2" />
+
+    <TextView
+        android:id="@+id/ticTacX31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="#FF0101"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ticTacX32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="#FF0000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1" />
+
+    <TextView
+        android:id="@+id/ticTacX33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="#FF0000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv2" />
+
+    <TextView
+        android:id="@+id/ticTacO11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textColor="#000000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv1"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ticTacO21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textColor="#000000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv1"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ticTacO31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textColor="#000000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ticTacO12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textColor="#000000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1" />
+
+    <TextView
+        android:id="@+id/ticTacO22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textColor="#000000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1" />
+
+    <TextView
+        android:id="@+id/ticTacO32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textColor="#000000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1" />
+
+    <TextView
+        android:id="@+id/ticTacO13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textColor="#000000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv2" />
+
+    <TextView
+        android:id="@+id/ticTacO23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textColor="#000000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv2" />
+
+    <TextView
+        android:id="@+id/ticTacO33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:textColor="#000000"
+        android:textSize="180sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv2" />
+
+    <TextView
+        android:id="@+id/ticTacTurnMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="PLAYER ONE'S TURN"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv3" />
+
+    <Button
+        android:id="@+id/ticTacReplayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAIN"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacQuitButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacTurnMark" />
+
+    <Button
+        android:id="@+id/ticTacQuitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUIT"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacReplayButton"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacTurnMark" />
+
+    <Button
+        android:id="@+id/ticTacB11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv1"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ticTacHorizDiv4" />
+
+    <Button
+        android:id="@+id/ticTacB21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv1"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toTopOf="@id/ticTacHorizDiv4" />
+
+    <ImageView
+        android:id="@+id/ticTacHorizDiv4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:paddingTop="10px"
+        android:paddingBottom="5px"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ticTacB31"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv2"
+        app:layout_constraintTop_toTopOf="@id/ticTacHorizDiv4" />
+
+    <Button
+        android:id="@+id/ticTacB22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1" />
+
+    <Button
+        android:id="@+id/ticTacB32"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv1"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/ticTacB13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv2" />
+
+    <Button
+        android:id="@+id/ticTacB23"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toStartOf="@+id/ticTacVertDiv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv1"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv2" />
+
+    <Button
+        android:id="@+id/ticTacB33"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ticTacHorizDiv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ticTacVertDiv2"
+        app:layout_constraintTop_toBottomOf="@+id/ticTacHorizDiv2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

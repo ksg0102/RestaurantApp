@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chef_edit_menu"
+    android:background="@drawable/gradient_list"
+    tools:context=".fragments.chefMenu.ChefViewScheduleFragment">
+
+    <ImageView
+        android:id="@+id/image_edit_menu_chef"
+        android:layout_width="83dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/adjust_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_edit_menu_title_chef"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/edit_menu"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_edit_menu_chef"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_add_item_chef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="164dp"
+        android:background="@null"
+        android:src="@drawable/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_edit_menu_title_chef" />
+
+    <TextView
+        android:id="@+id/text_add_item_chef"
+        android:layout_width="133dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="139dp"
+        android:text="@string/add_menu_item"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_add_item_chef" />
+
+    <ImageButton
+        android:id="@+id/imageButton_change_menu_chef"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="165dp"
+        android:background="@null"
+        android:src="@drawable/chance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_add_item_chef" />
+
+    <TextView
+        android:id="@+id/text_change_menu_chef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="133dp"
+        android:text="@string/update_menu_item"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_change_menu_chef" />
+
+    <ImageButton
+        android:id="@+id/imageButton_remove_item_chef"
+        android:layout_width="121dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="158dp"
+        android:background="@null"
+        android:src="@drawable/remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_change_menu_chef" />
+
+    <TextView
+        android:id="@+id/text_remove_item_chef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="133dp"
+        android:text="@string/remove_menu_item"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_remove_item_chef" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
